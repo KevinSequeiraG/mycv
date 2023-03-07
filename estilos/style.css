@@ -1,0 +1,464 @@
+body {
+    margin: 0%;
+    background-color: aliceblue;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+}
+
+.posRel {
+    position: absolute;
+}
+
+.Enlace {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.Enlace:before,
+.Enlace:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    box-sizing: border-box;
+    transform: scale(0);
+}
+
+.Enlace:before {
+    transform: translateX(100%);
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: .1s transform linear, .1s height linear .1s;
+}
+
+.Enlace:after {
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    height: 2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: .1s transform linear .2s, .1s height linear .3s;
+}
+
+.Enlace:hover:after,
+.Enlace:hover:before {
+    transform: translateX(0);
+    height: 100%;
+    border-color: #333;
+}
+
+.Contenedor {
+    display: flex;
+    margin-top: 2.5%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    display: table;
+}
+
+.ImagenPresentacion {
+    max-width: 200px;
+    float: left;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+.info {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+}
+
+.Presentacion-Inicial {
+    -webkit-box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.73);
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.Info_Principal {
+    display: table-cell;
+    width: 60%;
+    float: left;
+}
+
+.Info_Principal ul {
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.Info_Principal ul li {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.Info_Principal ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Info_Principal ul li img {
+    max-width: 30px;
+    margin-right: 15px;
+}
+
+.Info_Principal h1 {
+    margin: 8px 0 0 15px;
+    font-size: 30px;
+}
+
+.Info_Principal h3 {
+    margin: 0 0 0 15px;
+    font-size: 20px;
+}
+
+.Info-Secundaria {
+    display: table-cell;
+    float: right;
+    width: 40%;
+}
+
+.Info-Secundaria ol {
+    margin-top: 10%;
+}
+
+.Info-Secundaria ol li {
+    float: right;
+    list-style-type: none;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.Info-Secundaria ol li a {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Info-Secundaria ol li img {
+    max-width: 30px;
+    margin-right: 7px;
+}
+
+.cuerpo {
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    -webkit-box-shadow: 0px 25px 44px 0px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 0px 25px 44px 0px rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 25px 44px 0px rgba(0, 0, 0, 0.73);
+}
+
+.Contenido_Cuerpo {
+    padding: 0rem 3rem 3rem 3rem;
+}
+
+.cuerpo h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5%;
+}
+
+.cuerpo p {
+    text-align: justify;
+    font-size: 19px;
+    margin-bottom: 2rem;
+}
+
+.cuerpo ul {
+    padding: 0%;
+}
+
+.cuerpo h3 {
+    margin-top: 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.cuerpo p {
+    color: black;
+    font-weight: 500;
+    margin: 0%;
+}
+
+.Educacion li {
+    margin-top: 75px;
+    font-size: 22px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.Habilidades li {
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.HabilidadesTecnicas li {
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+
+.Idiomas li {
+    font-size: 25px;
+}
+
+.Hobbies li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tablaHabilidades {
+    padding: 0 20%;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+    text-align: center;
+}
+
+tr:hover td {
+    background: #d0dafd;
+    color: #339;
+}
+
+.AumentoLetra:hover {
+    transition: ease-in;
+    font-size: 40px;
+    cursor: default;
+}
+
+.QuitaSaltoLinea {
+    display: inline;
+}
+
+
+.Menu {
+    margin-top: 0%;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.Menu #imgHamb {
+    display: none;
+}
+
+.Menu ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Menu li {
+    list-style-type: none;
+    float: left;
+}
+
+.Menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.Menu li a:hover {
+    background-color: #111;
+}
+
+.Menu input {
+    display: none;
+}
+
+@media (max-width: 1150px) {
+    body{
+        width: 100%;
+    }
+    .Contenedor {
+        margin: 0%;
+        width: 100%;
+    }
+
+    div .tablaHabilidades{
+        padding: 0% 0%;
+    }
+
+    .Presentacion-Inicial {
+        display: table;
+        align-items: center;
+        display: table;
+        text-align: center;
+    }
+
+    .Imagen{
+        width: 100%;
+        height: 200px;
+        margin-left: 25%;
+    }
+
+
+    .info {
+        display: initial;
+    }
+
+    .Info_Principal {
+        display: table-cell;
+        float: unset;
+        vertical-align: middle;
+    }
+
+
+    .Info-Secundaria {
+        display: table-cell;
+        float: left;
+        vertical-align: middle;
+        margin-left: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    .Info-Secundaria ol {
+        display: initial;
+        align-items: center;
+    }
+
+    .Info-Secundaria ol li {
+        float: initial;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;        
+        margin-left: 5px;
+    }
+
+
+    .Contenedor ul {
+        margin-top: 1%;
+    }
+
+    .Info_Principal li {
+        font-size: 8px;
+        float: initial;
+    }
+
+    .Menu {
+        padding-bottom: 20px;
+        align-items: center;
+        width: 100%;
+        position: initial;
+    }
+
+    .Menu ul {
+        width: 100%;
+
+        display: none;
+    }
+
+    .Menu li {
+        float: initial;
+    }
+
+    .Menu #imgHamb {
+        display: block;
+        align-items: center;
+    }
+
+    .Menu label {
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    .Menu input:checked~ul {
+        display: initial;
+
+    }
+
+    .tablaHabilidades {
+        padding: 0 10%;
+    }
+
+    table {
+        width:100%;
+        align-items: center;
+    }
+
+    #tablaHabilidades{
+        margin: 0;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+    .Info_Principal ul{
+        margin-top: 20px;
+    }
+}
